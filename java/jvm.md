@@ -1,6 +1,7 @@
 # JVM 구조
 
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/95d79868-6516-46e7-be44-34a5c0c7dd72)
+
 
 클래스 로더 시스템
 
@@ -29,3 +30,8 @@ JNI
 네이티브 메소드 라이브러리
 
 - c,c++로 작성된 라이브러리
+
+
+
+#참고
+  [인프런 - 더 자바, 코드를 조작하는 다양한 방법](https://inf.run/DH6Y) 
