@@ -85,3 +85,45 @@ bin/kafka-topics.sh --bootstrap-server localhost:9092 \
 > 파티션: 1개
 > 복제본: 1개 (로컬 환경이므로 1로 설정)
 
+---
+
+## 🧪 CLI 실습: 메시지 송수신 테스트
+
+### ✅ Producer로 메시지 전송 (터미널 3)
+
+```bash
+cd kafka_2.13-3.8.1
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
+```
+
+> 입력창에서 메시지를 입력 후 Enter로 전송
+
+예시:
+
+```
+hello kafka!
+this is my first message
+```
+
+### ✅ Consumer로 메시지 수신 (터미널 4)
+
+```bash
+cd kafka_2.13-3.8.1
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test-topic --from-beginning
+```
+
+> Producer가 보낸 메시지를 실시간으로 출력함
+
+---
+
+## ✅ 현재까지 확인한 흐름
+
+```
+1️⃣ Zookeeper 실행                ✅
+2️⃣ Kafka Broker 실행            ✅
+3️⃣ test-topic 생성              ✅
+4️⃣ Producer → 메시지 전송      ✅
+5️⃣ Consumer → 메시지 수신      ✅
+```
+
+
