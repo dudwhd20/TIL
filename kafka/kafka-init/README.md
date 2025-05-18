@@ -142,4 +142,5 @@ curl -X POST "http://localhost:8080/send?message=hello-from-postman"
 [Consumer] Received: hello-from-postman
 ```
 
----
+<img width="1912" alt="스크린샷 2025-05-12 22 20 10" src="https://github.com/user-attachments/assets/d65760f2-a714-48c1-838f-9f549f06a95e" />
+
