@@ -1,7 +1,15 @@
 apiVersion: app/v1
 kind: Deployment
 metadata:
+  namespace: practice-1
   name: nginx-deployment
+  labels:
+    part-of: k8s-practice
+    componet: web-server
+    name: practice-1
+    instance: practice-1-1
+    version: 1.0.0
+    managed-by: kubectl
 spec:
   replicas: 1
   selector:
